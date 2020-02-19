@@ -59,6 +59,13 @@ header button {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    border: 1px solid transparent;
+}
+
+header button:hover {
+    color: crimson;
+    background-color: white;
+    border: 1px solid crimson;
 }
 
 header p {
@@ -83,6 +90,7 @@ form input, form button {
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px #ffffff88 solid;
+    
 }
 
 form input {
@@ -95,7 +103,14 @@ form input::placeholder {
 
 form button {
     font-weight: bold;
+    color: crimson;
     cursor: pointer;
+    transition: all 300ms;
+}
+
+form button:hover {
+    color:black;
+    border: 1px solid black;
 }
 
 
@@ -141,5 +156,15 @@ footer {
     padding: 16px;
 
     border: 1px solid #eee;
+}
+
+section.form, header button {
+    transition: all 300ms;
+}
+section.form.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
 }
 
