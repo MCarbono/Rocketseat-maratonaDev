@@ -1,0 +1,20 @@
+{
+  "name": "Rocketseat-maratonaDev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MCarbono/Rocketseat-maratonaDev.git",
+  "author": "Marcelo <carbono.marcelo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.0",
+    "pg": "^7.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.12.1"
+  }
+}

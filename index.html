@@ -19,7 +19,7 @@
     </header>
     <section class="form hide">
         <h2>Entre na lista de doadores</h2>
-        <form action="/" method="post">
+        <form action="/" method="POST">
             <input type="text" name="name" placeholder="Nome Completo">
             <input type="text" name="email" placeholder="Email">
             <input type="text" name="blood" placeholder="Tipo Sanguíneo">
@@ -30,25 +30,14 @@
         <h2>Últimos <span>doadores</span></h2>
 
         <section class="donors">
-            <div class="donor">
-                <div class="blood">AB+</div>
-                <p>Diego Fernandes</p>
-            </div>
 
+        {% for donor in donors %}
             <div class="donor">
-                <div class="blood">B+</div>
-                <p>Cleiton Souza</p>
+                <div class="blood">{{donor.blood}}</div>
+                <p>{{donor.name}}</p>
             </div>
-
-            <div class="donor">
-                <div class="blood">A+</div>
-                <p>Robson Marques</p>
-            </div>
-
-            <div class="donor">
-                <div class="blood">O+</div>
-                <p>Mayk Brito</p>
-            </div>
+        {% endfor %}
+           
         </section>
     </main>
     <footer>Com &#10084; Rocketseat.</footer>
